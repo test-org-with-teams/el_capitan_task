@@ -1,5 +1,10 @@
 h1 Listing posts
 
+= form_tag posts_path, method: :get
+  = datetime_field_tag :start_date
+  = datetime_field_tag :end_date
+  = submit_tag "Search"
+
 table
   thead
     tr
